@@ -1,5 +1,5 @@
 document.addEventListener('keydown', (e) => {
-	if (document.activeElement && ['input', 'textarea'].includes(document.activeElement.localName)) {
+	if (document.activeElement !== null && ['input', 'textarea'].includes(document.activeElement.localName)) {
 		return;
 	}
 
