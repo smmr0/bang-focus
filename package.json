@@ -8,7 +8,7 @@
 	"scripts": {
 		"lint": "eslint src/ $@ && yarn run build && web-ext lint --source-dir build/ --warnings-as-errors",
 		"clean": "rm -rf build/ dist/",
-		"build": "rm -rf build/ && cp -R src/ build/",
+		"build": "rm -rf build/ && cp -R src/ build/ && cp LICENSE.md build/",
 		"run": "yarn run build && yarn run web-ext run --source-dir build/ $@",
 		"package": "yarn run build && yarn run web-ext build --source-dir build/ --artifacts-dir dist/ --overwrite-dest $@",
 		"sign": "yarn run build && yarn run web-ext sign --source-dir build/ --artifacts-dir dist/ $@"
