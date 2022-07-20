@@ -16,6 +16,9 @@ jobs:
       - run: yarn run lint
       - run: yarn run package
       - run: yarn run sign
+        env:
+          WEB_EXT_API_KEY: '${{ secrets.WEB_EXT_API_KEY }}'
+          WEB_EXT_API_SECRET: '${{ secrets.WEB_EXT_API_SECRET }}'
       - uses: 'marvinpinto/action-automatic-releases@latest'
         with:
           repo_token: '${{ secrets.GITHUB_TOKEN }}'
