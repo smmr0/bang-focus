@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"packageManager": "yarn@3.2.1",
+	"devDependencies": {
+		"eslint": "^8.20.0",
+		"web-ext": "^7.1.0"
+	},
+	"scripts": {
+		"lint": "eslint src/ $@ && yarn run build && web-ext lint --source-dir build/ --warnings-as-errors",
+		"clean": "rm -rf build/ dist/",
+		"build": "rm -rf build/ && cp -R src/ build/",
+		"run": "yarn run build && yarn run web-ext run --source-dir build/ $@",
+		"package": "yarn run build && yarn run web-ext build --source-dir build/ --artifacts-dir dist/ --overwrite-dest $@",
+		"sign": "yarn run build && yarn run web-ext sign --source-dir build/ --artifacts-dir dist/ $@"
+	}
+}
