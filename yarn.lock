@@ -730,17 +730,17 @@ __metadata:
   linkType: hard
 
 "cacheable-request@npm:^10.2.1":
-  version: 10.2.6
-  resolution: "cacheable-request@npm:10.2.6"
+  version: 10.2.7
+  resolution: "cacheable-request@npm:10.2.7"
   dependencies:
     "@types/http-cache-semantics": "npm:^4.0.1"
     get-stream: "npm:^6.0.1"
-    http-cache-semantics: "npm:^4.1.0"
+    http-cache-semantics: "npm:^4.1.1"
     keyv: "npm:^4.5.2"
     mimic-response: "npm:^4.0.0"
     normalize-url: "npm:^8.0.0"
     responselike: "npm:^3.0.0"
-  checksum: db447b5983291ede6250402b2dfc4aeaeec3f42f78aba3fa957b93505c46ea9458048260a5e6a6a04ee66c0724bed207602175261f95bea81841380dd014379a
+  checksum: c67412734c26b65a72b4ffe4fa1f5e7868c062a36b5f83d1e1e9f2ccae35d85e0d0933c1b0aa9587e2c9f1768e782af6b3f98f0b1274f09f3b1498b8640bc0cf
   languageName: node
   linkType: hard
 
@@ -2102,7 +2102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http-cache-semantics@npm:^4.1.0":
+"http-cache-semantics@npm:^4.1.0, http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
   checksum: 7b4d86f99fb3f07b6a49219420ebdffa077ee99bc5fe1df1f353b84c3d321c767a083a48291afb2fc34a627661b6d54c80a927639a7be9e0c43e8c4f921816bd
